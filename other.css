@@ -56,6 +56,7 @@ body{
     text-decoration: none;
     flex-wrap: wrap;
   }
+  
 
   .flip1, .flip2{
     color:#ffdc9c;
@@ -101,6 +102,20 @@ body{
     height: 80vh;
     width: 100%;
     background-image: linear-gradient(#0c2d8fb8 0%,#ffdc9c89), url('imgs/wheely-clean.png');
+    justify-content: left;
+    align-items:flex-end;
+    background-position: 0 0, 50%, 70%;
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin:0;
+    padding:0;
+  }
+
+  .photoexp{
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(#0c2d8fb8 0%,#ffdc9c89), url('imgs/JGD_adobe.png');
     justify-content: left;
     align-items:flex-end;
     background-position: 0 0, 50%, 70%;
