@@ -82,34 +82,44 @@
     </div>
 
     <h2 class="header">Autofill Service</h2>
-    <div class="desprocess2">
-    <div class="textcontainer">
 
-    <p>
-        INFORMATION HERE
-            </p>
+    <div class="spotprocess2">
+        <div class="imgbox">
+        <img class="spotimg" src="imgs/autofill_service.png" style="width: 500px; margin-left: 100px;" alt="autofill service screenshot">
+        </div>
+        <div class="textbox">
+                <p class="text">You know that moment when you go to login to an app that you love, and it knows who you are? Without a thought the app logs you in! Such functionality is supported by enabling AutoFill services in the application's backend! <br><br> This semester working with AAA, they challenged me to work on getting the Autofill service working for the JustGotDucked app to improve the user login experience.</p>
             </div>
+    </div>
+
+    <div class="spotprocess2">
+        <div class="imgbox">
+        <img class="spotimg" src="imgs/autofill_mobile.png" style="width: 200px; margin-left: 100px;" alt="autofill service screenshot">
+        </div>
+        <div class="textbox">
+                <p class="text">Getting this Autofill service working was really quite simple. We just had to wrap our forms with an Autofill group, and then for each textfield we wanted to be autofilled, we set autofill to be true! It was as simple as that! <br><br> A major learning point in working with this service is that Apple products are very strongly interlinked, thus making it quite challenging for our application that is cross-functional to use the Apple passkey saver. However, after enabling permissions, the service was smooth sailing!</p>
             </div>
+    </div>
 
     <h2 class="header">Debugging Text Recognition</h2>
-    <div class="desprocess2">
-        <div class="textcontainer">
-    
-        <p>
-            INFORMATION HERE
-                </p>
-                </div>
-                </div>
 
-    <h2 class="header">Landing/Login Development</h2>
-    <div class="desprocess2">
-        <div class="textcontainer">
-    
-        <p>
-            INFORMATION HERE
-                </p>
-                </div>
-                </div>
+    <div class="spotprocess2">
+     
+        <div class="textbox">
+            <p class="text">
+                A larger, and more pain staking, code challenge from my semester with AAA was working on a text-recognition/scanning service. Another intern had written the main functionality for the code out and got it working on Android, however, it was being stubborn on IOS. That's where I came in to help debug and get it working!
+            </p>
+            <p class="text">
 
+                For our scanning/text-recognition service we were using the Google MLKit Text Recognition. When debugging the problem, we made a few observations: <br><br> 
+                First, using third party services like this one can sometimes cut particular audiences out of an application. For example, to use the most updated version of the text recognition service, we needed to upgrade our app's minimum IOS support from 12 to 15. While this may seem drastic, most of our users were using IOS versions well over 15 by the time we created this service so it was no problem.
+                <br><br>
+                Second, IOS and Android do not get along all the time in Flutter. We were using code from Flutter's documentation that was supposed to support both IOS and Android text recognition, but we ended up needing to change the formula used by Flutter's documentation for parsing the images. Then we inserted a check for the platform type (IOS or Android) and calculated the formula accordingly.
+            </p>
+            <p class="text">
+                Overall, working on this service and learning how to upgrade functionalities in a codebase while maintaining the functionality of other features was a great lesson!</p>
+       </div>
+    </div>
+    
  
 </body>
